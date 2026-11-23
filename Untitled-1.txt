@@ -1,0 +1,27 @@
+//WAF to find the product of two number .
+// #include<iostream>
+// using namespace std;
+// int product(int a,int b){
+//     return a*b;
+// }
+// int main (){
+//     cout<<"product =  "<<product(10,19)<<endl;
+//     return 0;
+// }
+//WAF IF NUMBER I EVEN OR ODD
+#include<iostream>
+using namespace std;
+bool iseven(int n){
+    if(n%2==0){
+        return true;
+    }else{
+        return false;
+    }
+}
+int main(){
+    int n;
+    cout<<"enter your number :";
+    cin>>n;
+    cout<<iseven(n)<<endl;
+    return 0;
+}

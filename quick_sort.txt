@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int partition(int *arr,int st,int end){
+    int idx=st-1;
+    int pivot=arr[end];
+    for(int j=st;j<end;j++){
+        if(arr[j]<=pivot){
+            idx++;
+            swap(arr[j],arr[idx]);
+        }
+    }
+    idx ++;
+    swap(arr[end],arr[idx]);
+    return idx;
+}
+
+int main(){
+    int arr[5]={4,2,6,3,8};
+    int n=sizeof(arr)/sizeof(int);
+    cout<<partition(arr,4,8);
+    return 0;
+}
